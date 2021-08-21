@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>weather | | app</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="shortcut icon"
+			href="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- <div class="py-3 text-center">
+				<h3>Open Weather <span class="text-warning"> Api </span></h3>
+				<p class="text-ligtt">Enter Your City . Check Weather Instantly</p>
+			</div> -->
+			<div class="p-3 bg-light text-center">
+				<img
+					src="http://openweathermap.org/img/wn/10d.png"
+					alt="Weather Condition"
+					id="condition"
+					class="
+						img-fluid
+						bg-warning
+						p-2
+						rounded
+						d-block
+						my-1
+						text-center
+						mx-auto
+					"
+				/>
+				<h5 id="city-name" class="pt-2">Dhaka District , BD</h5>
+				<div class="py-1 text-center">
+					<p class="text-center">
+						<span id="main">HAZE </span><small id="main-small">(haze)</small>
+					</p>
+				</div>
+				<div class="pb-1 d-flex justify-content-center">
+					<p class="font-weight-bold p-2 bg-info rounded">
+						TEMPERATURE : <span id="temp" class="text-danger">299.15 k</span>
+					</p>
+					<p class="font-weight-bold mx-3 p-2 bg-warning rounded">
+						PRESSURE : <span id="pressure" class="text-danger">1008 p</span>
+					</p>
+					<p class="font-weight-bold p-2 bg-info rounded">
+						HUMIDITY : <span id="humidity" class="text-danger">1008 </span>
+					</p>
+				</div>
+				<div class="pb-2">
+					<input
+						type="text"
+						placeholder="Input A City Name"
+						id="city-input"
+						class="form-control w-50 mx-auto"
+					/>
+					<div class="form-text text-muted">
+						Input A City Name And press enter to get Current Weather
+					</div>
+				</div>
+				<div class="p-3">
+					<h5 class="text-center pb-2 w-50 mx-auto search-result">
+						Recently Searched <span class="text-warning"> Result : </span>
+					</h5>
+					<div
+						class="py-3 w-100 mx-auto collection-container"
+						id="collection-container"
+					>
+						<img
+							src="https://icons8.com/preloaders/preloaders/1475/Skateboarding.gif"
+							alt=""
+							class="img-fluid d-block mx-auto loader-img"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="./script.js"></script>
+	</body>
+</html>

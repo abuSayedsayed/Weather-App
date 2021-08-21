@@ -1,0 +1,19 @@
+body {
+	font-family: 'Poppins', sans-serif !important;
+}
+.search-result {
+	border-bottom: 0.1rem solid #ffc107;
+}
+.my-alert {
+	position: fixed !important;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50%;
+	margin: auto;
+}
+
+.collection-container {
+	max-height: 58vh;
+	overflow-y: auto;
+}
